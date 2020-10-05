@@ -16,6 +16,7 @@
         create: true
         path: i3rc
     ~/.config/polybar:
+        create: true
         path: polybar
     ~/.config/dunst/dunstrc:
         create: true
@@ -23,8 +24,6 @@
     ~/.config/zathura/zathurarc:
         create: true
         path: zathurarc
-
-- create:
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

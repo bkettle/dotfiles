@@ -15,6 +15,14 @@
     ~/.config/i3/config:
         create: true
         path: i3rc
+    ~/.config/polybar:
+        path: polybar
+    ~/.config/dunst/dunstrc:
+        create: true
+        path: dunstrc
+    ~/.config/zathura/zathurarc:
+        create: true
+        path: zathurarc
 
 - create:
 

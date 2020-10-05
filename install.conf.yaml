@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/neovim/init.vim:
+        create: true
+        path: nvim/init.vim
+    ~/.bashrc:
+        path: bashrc
+    ~/.fehbg:
+        path: scripts/set-bg 
+    ~/.config/i3/config:
+        create: true
+        path: i3rc
+
+- create:
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

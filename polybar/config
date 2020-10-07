@@ -441,7 +441,7 @@ format-warn-padding = 5px;
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+label-warn-foreground = ${colors.primary}
 
 
 ramp-0 = 󱃃

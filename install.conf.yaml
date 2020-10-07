@@ -30,6 +30,8 @@
         path: picom
     ~/.config/rofi:
         path: rofi
+    ~/.config/termite:
+        path: termite
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

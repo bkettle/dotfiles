@@ -10,8 +10,7 @@ set autoindent                 " Minimal automatic indenting for any filetype.
 set backspace=indent,eol,start " Proper backspace behavior.
 set hidden                     " Possibility to have more than one unsaved buffers.
 set incsearch                  " Incremental search, hit `<CR>` to stop.
-set ruler                      " Shows the current line number at the bottom-right
-                               " of the screen.
+set ruler                      " Shows the current line number at the bottom-right of the screen.
 set wildmenu                   " Great command-line completion, use `<Tab>` to move
                                " around and `<CR>` to validate.
 set number		      
@@ -57,12 +56,14 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " track coc for autcomplete
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" specify where to look for snippets--I added 'snippets' folder
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"

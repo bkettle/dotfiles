@@ -5,11 +5,13 @@
 - clean: ['~']
 
 - link:
-    ~/.config/neovim/init.vim:
+    ~/.config/nvim:
         create: true
-        path: nvim/init.vim
+        path: nvim
     ~/.bashrc:
         path: bashrc
+    ~/.zshrc:
+        path: zshrc
     ~/.fehbg:
         path: scripts/set-bg 
     ~/.config/i3/config:
@@ -24,6 +26,15 @@
     ~/.config/zathura/zathurarc:
         create: true
         path: zathurarc
+    ~/.config/picom.conf:
+        path: picom
+    ~/.config/rofi:
+        path: rofi
+    ~/.config/termite:
+        path: termite
+    ~/.config/gtk-3.0/gtk.css:
+        create: true
+        path: gtk-3.0/gtk.css
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

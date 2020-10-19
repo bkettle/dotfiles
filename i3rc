@@ -29,6 +29,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+# start blueman-applet
+exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-tray
+
 # also need to load kwallet for passwords?
 exec --no-startup-id /usr/lib/pam_kwallet_init  
 exec --no-startup-id kwallet5d  

@@ -38,6 +38,9 @@
     ~/.config/spotifyd/spotifyd.conf:
         create: true
         path: spotifyd
+    ~/.config/fontconfig:
+        create: true
+        path: fontconfig
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

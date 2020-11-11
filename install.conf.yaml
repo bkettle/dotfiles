@@ -35,6 +35,9 @@
     ~/.config/gtk-3.0/gtk.css:
         create: true
         path: gtk-3.0/gtk.css
+    ~/.config/darktable/darktablerc:
+        create: true
+        path: darktablerc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

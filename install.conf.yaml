@@ -38,6 +38,9 @@
     ~/.config/darktable/darktablerc:
         create: true
         path: darktablerc
+    ~/.tmux.conf:
+        path: tmux
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -43,6 +43,9 @@
         path: redshift
     ~/.config/alacritty/alacritty.yml:
         create: true
+    ~/config/git/config:
+        create: true
+        path: gitconfig
 
 
 - shell:

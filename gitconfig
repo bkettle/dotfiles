@@ -1,0 +1,22 @@
+[alias]
+	lol = log --graph --oneline --decorate --color --all
+	pullrb = pull --rebase
+	st = status -sb
+	update-submodules = submodule update --init --recursive
+	upgrade-submodules = submodule update --init --remote
+
+[credential]
+	helper = store
+
+[init]
+	defaultBranch = main
+
+[user]
+	useConfigOnly = true
+
+[push]
+	default = upstream
+
+# non-version-controlled settings
+[include]
+	path = ~/.gitconfig_local

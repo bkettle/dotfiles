@@ -36,12 +36,6 @@
         path: picom
     ~/.config/rofi:
         path: rofi
-    ~/.config/gtk-3.0/gtk.css:
-        create: true
-        path: gtk-3.0/gtk.css
-    ~/.config/darktable/darktablerc:
-        create: true
-        path: darktablerc
     ~/.tmux.conf:
         path: tmux
     ~/.config/redshift/redshift.conf:

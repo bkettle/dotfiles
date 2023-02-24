@@ -4,3 +4,7 @@ set -sg escape-time 0
 unbind C-b
 set-option -g prefix C-a
 bind-key C-a send-prefix
+
+set -g default-terminal "screen-256color"
+
+set -g mouse on

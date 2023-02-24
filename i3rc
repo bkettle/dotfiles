@@ -24,7 +24,7 @@ font pango:DejaVu Sans Mono 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen --lock blur
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -58,7 +58,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -173,6 +173,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# lock screen
+bindym $mod+Control+l exec "betterlockscreen --lock blur"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -219,17 +221,17 @@ smart_gaps on
 # brightness commands 
 set $refresh_i3blocks_brightness pkill -SIGRTMIN+11 i3blocks
 # increase brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 && $refresh_i3blocks_brightness
+bindsym XF86MonBrightnessUp exec /home/ben/.dotfiles/scripts/nextbacklight inc && $refresh_i3blocks_brightness
 # decrease brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 && $refresh_i3blocks_brightness 
+bindsym XF86MonBrightnessDown exec /home/ben/.dotfiles/scripts/nextbacklight dec && $refresh_i3blocks_brightness 
 
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 
 # set background
 exec --no-startup-id hsetroot -solid "#333333"
 # we will use pywal now, which will call feh
-# exec --no-startup-id feh --bg-fill ~/bg-images/ghb.jpg
-exec --no-startup-id wal -R
+exec --no-startup-id feh --bg-fill ~/bg-images/drone-gulch.jpg
+# exec --no-startup-id wal -R
 
 # these things are from the guide for i3 on manjaro
 # to use i3 inside plasme, these are necessary. on its own, they arent

@@ -5,6 +5,8 @@
 - clean: ['~']
 
 - link:
+    ~/.config/emacs:
+        path: emacs
     ~/.config/nvim:
         create: true
         path: nvim
@@ -12,6 +14,10 @@
         path: bashrc
     ~/.zshrc:
         path: zshrc
+    ~/.config/sway:
+        path: sway
+    ~/.config/fontconfig:
+        path: fontconfig
     ~/.fehbg:
         path: scripts/set-bg 
     ~/.config/i3/config:
@@ -30,16 +36,16 @@
         path: picom
     ~/.config/rofi:
         path: rofi
-    ~/.config/termite:
-        path: termite
-    ~/.config/gtk-3.0/gtk.css:
-        create: true
-        path: gtk-3.0/gtk.css
-    ~/.config/darktable/darktablerc:
-        create: true
-        path: darktablerc
     ~/.tmux.conf:
         path: tmux
+    ~/.config/redshift/redshift.conf:
+        create: true
+        path: redshift
+    ~/.config/alacritty/alacritty.yml:
+        create: true
+    ~/config/git/config:
+        create: true
+        path: gitconfig
 
 
 - shell:

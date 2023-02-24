@@ -1,3 +1,12 @@
+# TODO: clean this up a lot, split into different files
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # options
 setopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
@@ -32,8 +41,7 @@ bindkey '^[[H' beginning-of-line                                # Home key
 if [[ "${terminfo[khome]}" != "" ]]; then
   bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
 fi
-bindkey '^[[8~' end-of-line                                     # End key
-bindkey '^[[F' end-of-line                                     # End key
+bindkey '^[[8~' end-of-line                                     # End key bindkey '^[[F' end-of-line                                     # End key
 if [[ "${terminfo[kend]}" != "" ]]; then
   bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
 fi
@@ -54,11 +62,15 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 
 ## Alias section 
 alias cp="cp -i"                                                # Confirm before overwriting something
+alias mv="mv -i"
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 alias nh="nohup"
-alias z="zathura"
+alias ssh='TERM=xterm-color ssh'
+alias la='ls -alh --color=auto'
+alias rm='rm -i'
+alias ec="emacsclient -nc"
 
 # Theming section  
 autoload -U compinit colors zcalc
@@ -197,8 +209,32 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
     ;;
 esac
 
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+# add ruby to path
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
+source /usr/share/nvm/init-nvm.sh --no-use
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+PATH="/home/ben/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/ben/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/ben/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/ben/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/ben/perl5"; export PERL_MM_OPT;
+
+# add oss-cad-suite tools to path
+export PATH="$PATH:$HOME/bin/oss-cad-suite/bin"
+
+# set up opam
+[[ ! -r /home/ben/.opam/opam-init/init.zsh ]] || source /home/ben/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+export PATH="$PATH:$HOME/bin"
+source ~/bin/z/z.sh
+
+export EDITOR=nvim

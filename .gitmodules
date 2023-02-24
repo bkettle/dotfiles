@@ -2,3 +2,96 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "emacs/pkg/goto-chg"]
+	path = emacs/pkg/goto-chg
+	url = git@github.com:emacs-evil/goto-chg.git
+[submodule "emacs/pkg/evil"]
+	path = emacs/pkg/evil
+	url = https://github.com/emacs-evil/evil.git
+[submodule "emacs/pkg/racket-mode"]
+	path = emacs/pkg/racket-mode
+	url = git@github.com:greghendershott/racket-mode.git
+[submodule "emacs/pkg/use-package"]
+	path = emacs/pkg/use-package
+	url = git@github.com:jwiegley/use-package.git
+[submodule "emacs/pkg/pos-tip"]
+	path = emacs/pkg/pos-tip
+	url = git@github.com:pitkali/pos-tip.git
+[submodule "emacs/pkg/monokai-emacs"]
+	path = emacs/pkg/monokai-emacs
+	url = git@github.com:oneKelvinSmith/monokai-emacs.git
+[submodule "emacs/pkg/emacs-neotree"]
+	path = emacs/pkg/emacs-neotree
+	url = git@github.com:jaypei/emacs-neotree.git
+[submodule "emacs/pkg/projectile"]
+	path = emacs/pkg/projectile
+	url = git@github.com:bbatsov/projectile.git
+[submodule "emacs/pkg/company-mode"]
+	path = emacs/pkg/company-mode
+	url = git@github.com:company-mode/company-mode.git
+[submodule "emacs/pkg/PG"]
+	path = emacs/pkg/PG
+	url = git@github.com:ProofGeneral/PG.git
+[submodule "emacs/pkg/company-coq"]
+	path = emacs/pkg/company-coq
+	url = git@github.com:cpitclaudel/company-coq.git
+[submodule "emacs/pkg/company-math"]
+	path = emacs/pkg/company-math
+	url = git@github.com:vspinu/company-math.git
+[submodule "emacs/pkg/math-symbol-lists"]
+	path = emacs/pkg/math-symbol-lists
+	url = git@github.com:vspinu/math-symbol-lists.git
+[submodule "emacs/pkg/yasnippet"]
+	path = emacs/pkg/yasnippet
+	url = https://github.com/joaotavora/yasnippet
+[submodule "emacs/pkg/dash.el"]
+	path = emacs/pkg/dash.el
+	url = git@github.com:magnars/dash.el.git
+[submodule "nvim/pack/vendor/start/ctrlp.vim"]
+	path = nvim/pack/vendor/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "nvim/pack/vendor/start/ack.vim"]
+	path = nvim/pack/vendor/start/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
+[submodule "nvim/pack/vendor/start/nvim-tree.lua"]
+	path = nvim/pack/vendor/start/nvim-tree.lua
+	url = git@github.com:nvim-tree/nvim-tree.lua.git
+[submodule "nvim/pack/vendor/start/vim-easymotion"]
+	path = nvim/pack/vendor/start/vim-easymotion
+	url = git@github.com:easymotion/vim-easymotion.git
+[submodule "nvim/pack/vendor/start/nvim-cmp"]
+	path = nvim/pack/vendor/start/nvim-cmp
+	url = git@github.com:hrsh7th/nvim-cmp.git
+[submodule "nvim/pack/vendor/start/nvim-lspconfig"]
+	path = nvim/pack/vendor/start/nvim-lspconfig
+	url = git@github.com:neovim/nvim-lspconfig.git
+[submodule "nvim/pack/vendor/start/vim-sneak"]
+	path = nvim/pack/vendor/start/vim-sneak
+	url = git@github.com:justinmk/vim-sneak.git
+[submodule "nvim/pack/vendor/start/incsearch.vim"]
+	path = nvim/pack/vendor/start/incsearch.vim
+	url = git@github.com:haya14busa/incsearch.vim.git
+[submodule "nvim/pack/vendor/start/lightline.vim"]
+	path = nvim/pack/vendor/start/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
+[submodule "nvim/pack/vendor/start/cmp-nvim-lsp"]
+	path = nvim/pack/vendor/start/cmp-nvim-lsp
+	url = git@github.com:hrsh7th/cmp-nvim-lsp.git
+[submodule "nvim/pack/vendor/start/cmp-buffer"]
+	path = nvim/pack/vendor/start/cmp-buffer
+	url = git@github.com:hrsh7th/cmp-buffer.git
+[submodule "nvim/pack/vendor/start/cmp-path"]
+	path = nvim/pack/vendor/start/cmp-path
+	url = git@github.com:hrsh7th/cmp-path.git
+[submodule "nvim/pack/vendor/start/cmp-cmdline"]
+	path = nvim/pack/vendor/start/cmp-cmdline
+	url = git@github.com:hrsh7th/cmp-cmdline.git
+[submodule "nvim/pack/vendor/start/ultisnips"]
+	path = nvim/pack/vendor/start/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "nvim/pack/vendor/start/cmp-nvim-ultisnips"]
+	path = nvim/pack/vendor/start/cmp-nvim-ultisnips
+	url = git@github.com:quangnguyen30192/cmp-nvim-ultisnips.git
+[submodule "nvim/pack/vendor/start/vim-lsp-cxx-highlight"]
+	path = nvim/pack/vendor/start/vim-lsp-cxx-highlight
+	url = git@github.com:jackguo380/vim-lsp-cxx-highlight.git

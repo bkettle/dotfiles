@@ -1,0 +1,6 @@
+[redshift]
+temp-night=3500
+location-provider=manual
+[manual]
+lat=42.35843
+lon=-71.05977

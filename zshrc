@@ -71,6 +71,7 @@ alias ssh='TERM=xterm-color ssh'
 alias la='ls -alh --color=auto'
 alias rm='rm -i'
 alias ec="emacsclient -nc"
+alias j="just"
 
 # Theming section  
 autoload -U compinit colors zcalc

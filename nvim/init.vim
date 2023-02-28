@@ -1,3 +1,6 @@
+" TODO: isolate neovim-only stuff into a lua config file. Can we then
+" conditionally import it?
+
 " Turn on syntax highlighting.
 syntax on
 
@@ -56,6 +59,19 @@ let g:python3_host_prog = $HOME.'/.venvs/neovim3/bin/python'
 " show errors, etc in the same as the numbers
 set signcolumn=number
 
+" Use 2-space tabs
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Use tabs for folding by default, and have them open initially
+set foldmethod=indent
+set foldlevelstart=99
+
+" Preview results of substitute (neovim only)
+if has("nvim")
+    set inccommand=nosplit
+endif
 
 " Set up LSP
 " TODO: figure out if there's a way to include a lua file instead of this

@@ -249,4 +249,4 @@ for_window [class="plasmashell" window_type="notification"] floating enable, bor
 no_focus [class="plasmashell" window_type="notification"] 
 
 # program shortcuts
-bindsym $mod+b exec firefox
+bindsym $mod+b exec chromium

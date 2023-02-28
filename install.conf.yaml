@@ -41,8 +41,7 @@
     ~/.config/redshift/redshift.conf:
         create: true
         path: redshift
-    ~/.config/alacritty/alacritty.yml:
-        create: true
+    ~/.config/alacritty:
     ~/config/git/config:
         create: true
         path: gitconfig

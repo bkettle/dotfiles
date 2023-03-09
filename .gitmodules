@@ -47,9 +47,6 @@
 [submodule "emacs/pkg/dash.el"]
 	path = emacs/pkg/dash.el
 	url = git@github.com:magnars/dash.el.git
-[submodule "nvim/pack/vendor/start/ctrlp.vim"]
-	path = nvim/pack/vendor/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule "nvim/pack/vendor/start/ack.vim"]
 	path = nvim/pack/vendor/start/ack.vim
 	url = git@github.com:mileszs/ack.vim.git

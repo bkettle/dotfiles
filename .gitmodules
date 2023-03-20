@@ -104,3 +104,6 @@
 [submodule "nvim/pack/vendor/start/vista.vim"]
 	path = nvim/pack/vendor/start/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
+[submodule "nvim/pack/vendor/start/vimtex"]
+	path = nvim/pack/vendor/start/vimtex
+	url = git@github.com:lervag/vimtex.git

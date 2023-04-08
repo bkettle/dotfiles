@@ -1,5 +1,7 @@
 [alias]
-	lol = log --graph --oneline --decorate --color --all
+  lol = log --graph --all --oneline --color
+  gr = log --graph --format=line 
+	gra = log --graph --format=line --all
 	pullrb = pull --rebase
 	st = status -sb
 	update-submodules = submodule update --init --recursive
@@ -13,6 +15,11 @@
 
 [user]
 	useConfigOnly = true
+
+[pretty]
+  line = "%C(auto)%h %<|(60,trunc)%s  %C(green)%ad %C(magenta)<%ae>%C(auto)%d"
+  detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ad%n %C(auto)%d%n"
+
 
 [push]
 	default = upstream

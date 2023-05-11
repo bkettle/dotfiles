@@ -47,3 +47,12 @@ set -g history-limit 65536
 # renumber windows sequentially after closing any of them
 set -g renumber-windows on
 
+# easily clear history (for looking through output, etc)
+bind C-k clear-history \; display-message "history cleared"
+
+# clear screen and clear history with a single keypress
+bind C-b send-keys -R ^M \; clear-history \; display-message "history and screen cleared"
+
+# reload the .tmux.conf file with Ctrl-r
+bind C-r source-file ~/.tmux.conf \; display-message "configuration reloaded"
+

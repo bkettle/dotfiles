@@ -1,6 +1,22 @@
 " TODO: isolate neovim-only stuff into a lua config file. Can we then
 " conditionally import it?
 
+" vimtex
+" for some reason this needs to be at the top, otherwise they don't apply
+" unless I do :VimtexReload
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+" ultisnips
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+let g:UltiSnipsJumpForwardTrigger="jk"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
+filetype plugin on
+
 " Turn on syntax highlighting.
 syntax on
 
@@ -76,11 +92,6 @@ endif
 " fzf shortcut
 :nnoremap <C-p> :Files<CR>
 
+
 luafile ~/.dotfiles/nvim/lua/package_config.lua
 
-" vimtex
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'

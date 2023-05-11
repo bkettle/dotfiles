@@ -107,3 +107,6 @@
 [submodule "nvim/pack/vendor/start/vimtex"]
 	path = nvim/pack/vendor/start/vimtex
 	url = git@github.com:lervag/vimtex.git
+[submodule "nvim/pack/vendor/start/cmp-omni"]
+	path = nvim/pack/vendor/start/cmp-omni
+	url = git@github.com:hrsh7th/cmp-omni.git

@@ -1,6 +1,14 @@
 -- Set up nvim-cmp.
 local cmp = require'cmp'
 
+require("cmp_nvim_ultisnips").setup {
+  filetype_source = "ultisnips_default",
+  show_snippets = "all",
+  documentation = function(snippet)
+    return snippet.description
+  end
+}
+
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
@@ -21,9 +29,9 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
-    { name = 'vsnip' }, -- For vsnip users.
+    -- { name = 'vsnip' }, -- For vsnip users.
     -- { name = 'luasnip' }, -- For luasnip users.
-    -- { name = 'ultisnips' }, -- For ultisnips users.
+    { name = 'ultisnips' }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
   }, {
     { name = 'buffer' },
@@ -64,6 +72,7 @@ local lspconfig = require'lspconfig'
 lspconfig.gopls.setup {
   capabilities = capabilities
 }
+lspconfig.rust_analyzer.setup{}
 
 -- some key configs for LSP - from https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua#L376
 local nmap = function(keys, func, desc)

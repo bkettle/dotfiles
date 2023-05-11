@@ -1,0 +1,74 @@
+snippet env "New LaTeX environment" b
+\begin{$1}
+	$2
+\end{$1}
+$0
+endsnippet
+
+snippet fig "New Image Figure" b
+\begin{figure}[htpb]
+\centering
+\includegraphics[width=0.75\textwidth]{$1}
+\caption{$2}
+\label{fig:$3}
+\end{figure}
+endsnippet
+
+snippet lstfig "New Listing Figure" b
+\begin{figure}[htpb]
+\centering
+\begin{lstlisting}[language=$1]
+$4
+\end{lstlisting}
+\caption{$2}
+\label{lst:$3}
+\end{figure}
+endsnippet
+
+snippet tab "New Table" b
+\begin{table}[htpb]
+	\caption{$1}
+	\label{tab:$2}
+
+  \centering
+  \begin{tabular}{$3}
+    \toprule
+		$4
+		\midrule
+		$5
+    \bottomrule
+  \end{tabular}
+\end{table}
+endsnippet
+
+
+
+snippet sec "LaTeX Section" b
+\section{$1}
+endsnippet
+
+snippet ssec "LaTeX subection" b
+\subsection{$1}
+endsnippet
+
+snippet sssec "LaTeX subsubection" b
+\subsubsection{$1}
+endsnippet
+
+
+snippet item "LaTeX itemize" b
+\begin{itemize}
+	\item $1
+\end{itemize}
+endsnippet
+
+snippet enum "LaTeX enumerate" b
+\begin{enumerate}
+	\item $1
+\end{enumerate}
+endsnippet
+
+snippet it "LaTeX item" b
+\item $1
+endsnippet
+

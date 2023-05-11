@@ -72,6 +72,7 @@ alias la='ls -alh --color=auto'
 alias rm='rm -i'
 alias ec="emacsclient -nc"
 alias j="just"
+alias g="git"
 
 # Theming section  
 autoload -U compinit colors zcalc

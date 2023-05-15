@@ -229,9 +229,11 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 
 # set background
 exec --no-startup-id hsetroot -solid "#333333"
-# we will use pywal now, which will call feh
 exec --no-startup-id feh --bg-fill ~/bg-images/drone-gulch.jpg
-# exec --no-startup-id wal -R
+
+# move focused workspace between monitors
+bindsym $mod+Ctrl+l move workspace to output right
+bindsym $mod+Ctrl+h move workspace to output left
 
 # these things are from the guide for i3 on manjaro
 # to use i3 inside plasme, these are necessary. on its own, they arent

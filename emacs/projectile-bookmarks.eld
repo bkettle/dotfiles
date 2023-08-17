@@ -1,1 +1,0 @@
-("~/school/6.512/spring23/" "~/school/6.8370/" "~/school/urop/pdos/" "~/school/urop/pdos/knox-preview/" "/usr/share/racket/collects/racket/" "~/.dotfiles/")

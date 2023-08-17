@@ -5,44 +5,14 @@
 - clean: ['~']
 
 - link:
-    ~/.config/emacs:
-        path: emacs
     ~/.config/nvim:
         create: true
         path: nvim
-    ~/.bashrc:
-        path: bashrc
     ~/.zshrc:
         path: zshrc
-    ~/.config/sway:
-        path: sway
-    ~/.config/fontconfig:
-        path: fontconfig
-    ~/.fehbg:
-        path: scripts/set-bg 
-    ~/.config/i3/config:
-        create: true
-        path: i3rc
-    ~/.config/polybar:
-        create: true
-        path: polybar
-    ~/.config/dunst/dunstrc:
-        create: true
-        path: dunstrc
-    ~/.config/zathura/zathurarc:
-        create: true
-        path: zathurarc
-    ~/.config/picom.conf:
-        path: picom
-    ~/.config/rofi:
-        path: rofi
     ~/.tmux.conf:
         path: tmux
-    ~/.config/redshift/redshift.conf:
-        create: true
-        path: redshift
-    ~/.config/alacritty:
-    ~/config/git/config:
+    ~/.config/git/config:
         create: true
         path: gitconfig
 

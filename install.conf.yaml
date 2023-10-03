@@ -15,6 +15,7 @@
     ~/.config/git/config:
         create: true
         path: gitconfig
+    ~/.config/alacritty:
 
 
 - shell:

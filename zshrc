@@ -171,11 +171,13 @@ export LESS=-r
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
-bindkey '^[[B' history-substring-search-down
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 
 
 export PATH="$PATH:$HOME/bin"
 source ~/.dotfiles/scripts/z/z.sh
 
 export EDITOR=nvim
+
+source ~/.zshrc_local

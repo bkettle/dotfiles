@@ -16,6 +16,12 @@
         create: true
         path: gitconfig
     ~/.config/alacritty:
+    ~/.config/yabai/yabairc:
+        create: true
+        path: yabairc
+    ~/.config/skhd:
+        create: true
+        path: skhdrc
 
 
 - shell:

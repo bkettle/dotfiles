@@ -166,15 +166,6 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
 
-## Plugins section: Enable fish style features
-# bind UP and DOWN arrow keys to history substring search
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
-
-
 export PATH="$PATH:$HOME/bin"
 source ~/.dotfiles/scripts/z/z.sh
 

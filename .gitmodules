@@ -92,9 +92,6 @@
 [submodule "nvim/pack/vendor/start/vim-lsp-cxx-highlight"]
 	path = nvim/pack/vendor/start/vim-lsp-cxx-highlight
 	url = git@github.com:jackguo380/vim-lsp-cxx-highlight.git
-[submodule "nvim/pack/vendor/start/vim-just"]
-	path = nvim/pack/vendor/start/vim-just
-	url = git@github.com:NoahTheDuke/vim-just.git
 [submodule "nvim/pack/vendor/start/fzf.vim"]
 	path = nvim/pack/vendor/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git

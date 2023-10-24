@@ -45,6 +45,7 @@
     ~/config/git/config:
         create: true
         path: gitconfig
+    ~/.config/autorandr:
 
 
 - shell:

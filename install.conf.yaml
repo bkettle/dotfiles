@@ -15,15 +15,7 @@
     ~/.config/git/config:
         create: true
         path: gitconfig
-    ~/.config/autorandr:
     ~/.config/alacritty:
-    ~/.config/yabai/yabairc:
-        create: true
-        path: yabairc
-    ~/.config/skhd:
-        create: true
-        path: skhdrc
-
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

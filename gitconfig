@@ -1,11 +1,17 @@
 [alias]
   lol = log --graph --all --oneline --color
+  lolmine = log --graph --oneline --color
   gr = log --graph --format=line 
 	gra = log --graph --format=line --all
 	pullrb = pull --rebase
 	st = status -sb
+	sta = status
+	c = checkout
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
+
+[submodule]
+  recurse = true
 
 [credential]
 	helper = store
@@ -23,6 +29,7 @@
 
 [push]
 	default = upstream
+  autoSetupRemote = true
 
 # non-version-controlled settings
 [include]

@@ -9,6 +9,7 @@
 	c = checkout
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
+  pulp = pull -j16 # pull and fetch submodules in parallel
 
 [submodule]
   recurse = true

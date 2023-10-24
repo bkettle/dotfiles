@@ -10,11 +10,18 @@
         path: nvim
     ~/.zshrc:
         path: zshrc
+    ~/.zsh:
+      path: zsh
+    ~/.shell:
+      path: shell
     ~/.tmux.conf:
         path: tmux
     ~/.config/git/config:
         create: true
         path: gitconfig
+    ~/.config/git/ignore:
+        create: true
+        path: gitignore
     ~/.config/alacritty:
 
 - shell:

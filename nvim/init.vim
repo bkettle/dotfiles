@@ -93,5 +93,5 @@ endif
 :nnoremap <C-p> :Files<CR>
 
 
-luafile ~/.dotfiles/nvim/lua/package_config.lua
+lua require('init')
 

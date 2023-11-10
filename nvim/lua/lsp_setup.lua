@@ -10,3 +10,4 @@ lspconfig.rust_analyzer.setup{}
 lspconfig.pyright.setup{}
 lspconfig.eslint.setup{}
 lspconfig.ruff_lsp.setup{}
+lspconfig.ocamllsp.setup{}

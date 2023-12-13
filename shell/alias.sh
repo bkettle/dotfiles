@@ -11,6 +11,7 @@ alias ec="emacsclient -nc"
 alias j="just"
 alias g="git"
 alias -g gitprune="git fetch -p ; git branch --merged | egrep -v '(main|develop|release|master)' | xargs git branch -d"
+alias gs = "git status"
 
 # cd to git root directory
 alias cdgr='cd "$(git root)"'
@@ -27,3 +28,4 @@ gfc() {
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
+

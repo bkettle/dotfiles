@@ -4,14 +4,16 @@
   gr = log --graph --format=line 
 	gra = log --graph --format=line --all
 	pullrb = pull --rebase
-	st = status -sb
-	sta = status
-	c = checkout
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
   pulp = pull -j16 # pull and fetch submodules in parallel
   p = pull
   co = checkout
+  s = status
+  sta = status
+	st = status -sb
+  sh = stash
+  c = commit
 
 [submodule]
   recurse = true

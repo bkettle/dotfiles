@@ -92,6 +92,5 @@ endif
 " fzf shortcut
 :nnoremap <C-p> :Files<CR>
 
-
 lua require('init')
 

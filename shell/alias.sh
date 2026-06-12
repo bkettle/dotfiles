@@ -10,8 +10,8 @@ alias rm='rm -i'
 alias ec="emacsclient -nc"
 alias j="just"
 alias g="git"
+alias k="kubectl"
 alias -g gitprune="git fetch -p ; git branch --merged | egrep -v '(main|develop|release|master)' | xargs git branch -d"
-alias gs="git status"
 
 # cd to git root directory
 alias cdgr='cd "$(git root)"'

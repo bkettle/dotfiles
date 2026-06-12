@@ -1,1 +1,8 @@
 import = ["/Users/ben/.config/alacritty/theme.toml"]
+
+[window]
+decorations = "Buttonless"
+
+[window.padding]
+x = 4
+y = 4

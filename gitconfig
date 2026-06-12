@@ -1,14 +1,16 @@
 [alias]
-  lol = log --graph --all --oneline --color
-  lolmine = log --graph --oneline --color
+  lol = log --graph --oneline --color --branches
+  lolall = log --graph --oneline --color --all
   gr = log --graph --format=line 
 	gra = log --graph --format=line --all
 	pullrb = pull --rebase
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
   pulp = pull -j16 # pull and fetch submodules in parallel
-  p = pull
+  pl = pull
+  ps = push
   co = checkout
+  cob = checkout -b
   s = status
   sta = status
 	st = status -sb
@@ -17,6 +19,7 @@
 
 [submodule]
   recurse = true
+  fetchJobs = 20
 
 [credential]
 	helper = store
@@ -36,6 +39,86 @@
 	default = upstream
   autoSetupRemote = true
 
+[merge]
+  conflictStyle = zdiff3
+
+[core]
+  pager = delta
+
+[delta]
+  minus-style = red ul darkred
+  plus-style = green bold darkgreen
+
 # non-version-controlled settings
 [include]
 	path = ~/.gitconfig_local
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[rerere]
+	enabled = true
+[safe]
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = *
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmpnpeh4zly/repo/.git
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmpophsvjj3/repo/.git
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmpgo2vqics/repo/.git
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmpf9yf5hxv/repo/.git
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmp0zo3t00_/repo
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmp972hj5fh/repo
+	directory = /var/folders/kd/30bfhpx17157t5kt933zpcs00000gp/T/tmp_wg93q19/repo
+[url "git@github.com:"]
+	insteadOf = https://github.com/

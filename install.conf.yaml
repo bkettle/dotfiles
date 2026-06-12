@@ -23,6 +23,8 @@
         create: true
         path: gitignore
     ~/.config/alacritty:
+    ~/.config/zed:
+        path: zed/*
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

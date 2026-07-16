@@ -10,6 +10,8 @@
         path: nvim
     ~/.zshrc:
         path: zshrc
+    ~/.bashrc:
+        path: bashrc
     ~/.zsh:
       path: zsh
     ~/.shell:

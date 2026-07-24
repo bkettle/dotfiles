@@ -110,9 +110,6 @@
 [submodule "scripts/z"]
 	path = scripts/z
 	url = git@github.com:rupa/z.git
-[submodule "nvim/pack/vendor/start/rust-tools.nvim"]
-	path = nvim/pack/vendor/start/rust-tools.nvim
-	url = git@github.com:simrat39/rust-tools.nvim.git
 [submodule "nvim/pack/vendor/start/catppuccin-theme"]
 	path = nvim/pack/vendor/start/catppuccin-theme
 	url = git@github.com:catppuccin/nvim.git

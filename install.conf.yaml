@@ -25,6 +25,9 @@
         create: true
         path: gitignore
     ~/.config/alacritty:
+    ~/.config/darktable:
+      glob: true
+      path: darktable/**
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

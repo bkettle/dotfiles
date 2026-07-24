@@ -1,0 +1,2 @@
+-- disabling theme to just use terminal scheme
+-- vim.cmd.colorscheme "catppuccin"

@@ -9,3 +9,4 @@ source ~/.zshrc_local # non-version-controlled configuration
 source ~/.dotfiles/scripts/z/z.sh
 
 export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/.local/bin:$PATH"

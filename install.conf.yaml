@@ -28,6 +28,12 @@
     ~/.config/darktable:
       glob: true
       path: darktable/**
+    ~/.config/aerospace/aerospace.toml:
+        create: true
+        path: aerospace/aerospace.toml
+    ~/.config/ghostty/config.ghostty:
+        create: true
+        path: ghostty
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

@@ -14,6 +14,7 @@
 	st = status -sb
   sh = stash
   c = commit
+  cob = checkout -b
 
 [submodule]
   recurse = true

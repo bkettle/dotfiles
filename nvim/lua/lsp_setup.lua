@@ -11,13 +11,3 @@ lspconfig.eslint.setup{}
 lspconfig.ruff_lsp.setup{}
 lspconfig.ocamllsp.setup{}
 
--- rust-specific setup
-local rt = require("rust-tools")
-
-rt.setup({
-  server = {
-    on_attach = function(_, bufnr)
-    end,
-  },
-})
-rt.inlay_hints.enable()
